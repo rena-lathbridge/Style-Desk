@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Style Desk</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">A styling coach that shows its working</p>
+    <h1>The Style Desk</h1>
+    <p class="standfirst">Most styling apps hand you an outfit. This one works out the rules
+      behind the clothes you admire, writes them down where you can argue with them, and then
+      cites them every time it suggests something.</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true"  data-tab="teach"><span class="num">01</span>Teach me my style</button>
+    <button role="tab" aria-selected="false" data-tab="build"><span class="num">02</span>Help me recreate it</button>
+    <button role="tab" aria-selected="false" data-tab="debug"><span class="num">03</span>Debug my outfit</button>
+  </nav>
+
+  <div class="cols">
+    <main>
+
+      <!-- 01 -->
+      <section class="panel active" id="teach">
+        <h2 class="section">Show me what you like</h2>
+        <p class="lede">Upload a few images of outfits you keep coming back to. The analyst
+          looks for what they have in common and turns that into principles you can use.</p>
+
+        <div class="dropzone" id="inspo-zone">
+          <input type="file" id="inspo-files" accept="image/*" multiple>
+          <strong>Drop inspiration photos</strong>
+          <span>Up to 6 images &middot; upload them, or drag pins straight from your browser</span>
+        </div>
+        <div class="thumbs" id="inspo-thumbs"></div>
+
+        <label class="field" for="inspo-urls">Or paste image links, one per line</label>
+        <textarea id="inspo-urls" rows="3" placeholder="https://i.pinimg.com/736x/..."></textarea>
+        <p class="hint">On Pinterest, right-click a pin &rarr; <em>Copy image address</em>. A link to
+          the board itself will not work &mdash; Pinterest sends no pins to a server and disallows
+          fetching the page.</p>
+
+        <label class="field" for="inspo-note">Anything we should know? (optional)</label>
+        <textarea id="inspo-note" rows="2" placeholder="e.g. I keep buying things I never end up wearing, and I want to work out what I actually reach for."></textarea>
+
+        <button class="go" id="inspo-go">Find the pattern</button>
+        <div id="teach-out"></div>
+      </section>
+
+      <!-- 02 -->
+      <section class="panel" id="build">
+        <h2 class="section">Work with what you own</h2>
+        <p class="lede">Add your own clothes, or borrow the demo closet. The stylist only ever
+          builds from items on this list, and names the principle behind each choice.</p>
+
+        <div class="dropzone" id="ward-zone">
+          <input type="file" id="ward-files" accept="image/*" multiple>
+          <strong>Drop photos of your clothes</strong>
+          <span>One item per photo &middot; cataloged once, then remembered</span>
+        </div>
+        <p style="margin-top:14px"><button class="ghost" id="seed-btn">Or load the demo closet</button></p>
+
+        <label class="field" for="occasion">Where are you going? (optional)</label>
+        <input type="text" id="occasion" placeholder="e.g. a work dinner, or just a normal Tuesday">
+
+        <button class="go" id="outfit-go">Build outfits</button>
+        <div id="build-out"></div>
+      </section>
+
+      <!-- 03 -->
+      <section class="panel" id="debug">
+        <h2 class="section">Something feels off</h2>
+        <p class="lede">Upload what you have on and say what is bothering you. You will get a
+          read on what is working, what is not, and the smallest change that fixes it.</p>
+
+        <div class="dropzone" id="fit-zone">
+          <input type="file" id="fit-file" accept="image/*">
+          <strong>Drop a photo of the outfit</strong>
+          <span>One image</span>
+        </div>
+        <div class="thumbs" id="fit-thumbs"></div>
+
+        <label class="field" for="complaint">What feels wrong?</label>
+        <textarea id="complaint" rows="2" placeholder="e.g. it feels frumpy but I can't tell which piece is doing it."></textarea>
+
+        <button class="go" id="fit-go">Diagnose it</button>
+        <div id="debug-out"></div>
+      </section>
+
+    </main>
+
+    <aside>
+      <div class="card">
+        <h4>What this run cost</h4>
+        <div id="receipt">
+          <div class="stat"><span>Model calls</span><span class="v">0</span></div>
+          <div class="stat"><span>Cost so far</span><span class="v">$0.000000</span></div>
+        </div>
+        <div class="meter"><i id="budget-bar" style="width:0%"></i></div>
+        <div class="calls" id="call-list"></div>
+      </div>
+
+      <div class="card">
+        <h4>Your wardrobe</h4>
+        <div class="wardrobe-list" id="wardrobe-list">
+          <p style="color:var(--muted);font-size:13px;margin:0">Nothing added yet.</p>
+        </div>
+      </div>
+
+      <div class="card" id="safety-card" style="display:none">
+        <h4>Defenses triggered</h4>
+        <div id="safety-list"></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/store.json
+data/uploads/
+.DS_Store
+
+# Local editor / launcher config, specific to one machine
+.claude/

@@ -1,0 +1,14 @@
+[
+  {"id":"W1","name":"charcoal wool trousers","category":"bottom","colors":["charcoal"],"fabric":"wool suiting","fit":"straight, breaks at the ankle","formality":"business casual","notes":"Flat front, no cuff. The most formal bottom here.","embedded_text":""},
+  {"id":"W2","name":"ecru cotton shirt","category":"top","colors":["ecru"],"fabric":"cotton poplin","fit":"relaxed through the body","formality":"smart casual","notes":"Soft collar, holds a roll at the sleeve.","embedded_text":""},
+  {"id":"W3","name":"navy crewneck sweater","category":"top","colors":["navy"],"fabric":"merino wool","fit":"slim, sits at the hip","formality":"smart casual","notes":"Fine gauge, layers under a jacket without bulk.","embedded_text":""},
+  {"id":"W4","name":"indigo straight jeans","category":"bottom","colors":["indigo"],"fabric":"rigid denim","fit":"straight, full length","formality":"casual","notes":"Dark enough to read as smart with a jacket.","embedded_text":""},
+  {"id":"W5","name":"camel wool overcoat","category":"outerwear","colors":["camel"],"fabric":"wool blend","fit":"oversized, falls below the knee","formality":"business casual","notes":"The strongest silhouette piece in the wardrobe.","embedded_text":""},
+  {"id":"W6","name":"black leather loafers","category":"shoes","colors":["black"],"fabric":"polished leather","fit":"sleek almond toe","formality":"business casual","notes":"Dresses up denim, dresses down suiting.","embedded_text":""},
+  {"id":"W7","name":"white leather sneakers","category":"shoes","colors":["white"],"fabric":"smooth leather","fit":"low profile","formality":"casual","notes":"Clean, no visible branding.","embedded_text":""},
+  {"id":"W8","name":"olive cotton chore jacket","category":"outerwear","colors":["olive"],"fabric":"cotton twill","fit":"boxy, hits at the hip","formality":"casual","notes":"Square shoulder, three patch pockets.","embedded_text":""},
+  {"id":"W9","name":"black ribbed tank","category":"top","colors":["black"],"fabric":"ribbed cotton","fit":"close to the body","formality":"casual","notes":"Useful as a base layer under anything open.","embedded_text":""},
+  {"id":"W10","name":"gray wool scarf","category":"accessory","colors":["gray"],"fabric":"lambswool","fit":"long, generous width","formality":"casual","notes":"Adds a vertical line down an open coat.","embedded_text":""},
+  {"id":"W11","name":"tan leather belt","category":"accessory","colors":["tan"],"fabric":"leather","fit":"35mm, brushed buckle","formality":"smart casual","notes":"Warm tone; fights with black shoes.","embedded_text":""},
+  {"id":"W12","name":"black canvas tote","category":"bag","colors":["black"],"fabric":"heavy canvas","fit":"structured, holds a laptop","formality":"casual","notes":"Plain, no logo.","embedded_text":""}
+]
