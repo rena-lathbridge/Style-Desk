@@ -9,3 +9,4 @@ data/uploads/
 
 # Local editor / launcher config, specific to one machine
 .claude/
+shots/
